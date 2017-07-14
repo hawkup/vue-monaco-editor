@@ -66,6 +66,10 @@ module.exports = {
     },
     language () {
       window.monaco.editor.setModelLanguage(this.editor.getModel(), this.language)
+    },
+    code () {
+      this.destroyMonaco();
+      this.createMonaco();
     }
   },
   methods: {

@@ -63,6 +63,10 @@ module.exports = {
         this.highlightLines(lines);
       },
       deep: true
+    },
+    language () {
+      this.destroyMonaco();
+      this.createMonaco();
     }
   },
   methods: {
